@@ -1,0 +1,3 @@
+[submodule "Frameworks/Internal/ParentFramework"]
+	path = Frameworks/Internal/ParentFramework
+	url = https://github.com/saurabhverma/ParentFramework.git
