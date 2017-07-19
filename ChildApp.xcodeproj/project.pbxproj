@@ -577,6 +577,7 @@
 				B77FE94F1F1F29EE000A8D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77FE9501F1F29EE000A8D95 /* Build configuration list for PBXNativeTarget "ChildAppTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +586,7 @@
 				B77FE9521F1F29EE000A8D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77FE9531F1F29EE000A8D95 /* Build configuration list for PBXNativeTarget "ChildAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +595,7 @@
 				B77FE9551F1F29EE000A8D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
