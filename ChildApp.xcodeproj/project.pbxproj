@@ -14,6 +14,7 @@
 		B77FE9331F1F29EE000A8D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77FE9311F1F29EE000A8D95 /* LaunchScreen.storyboard */; };
 		B77FE93E1F1F29EE000A8D95 /* ChildAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FE93D1F1F29EE000A8D95 /* ChildAppTests.swift */; };
 		B77FE9491F1F29EE000A8D95 /* ChildAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FE9481F1F29EE000A8D95 /* ChildAppUITests.swift */; };
+		B77FE95F1F1F2CDE000A8D95 /* ParentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77FE95C1F1F2CD1000A8D95 /* ParentFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,27 @@
 			remoteGlobalIDString = B77FE9241F1F29EE000A8D95;
 			remoteInfo = ChildApp;
 		};
+		B77FE95B1F1F2CD1000A8D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77FE9561F1F2CD1000A8D95 /* ParentFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B77FE9021F1F16E3000A8D95;
+			remoteInfo = ParentFramework;
+		};
+		B77FE95D1F1F2CD1000A8D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77FE9561F1F2CD1000A8D95 /* ParentFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B77FE90B1F1F16E4000A8D95;
+			remoteInfo = ParentFrameworkTests;
+		};
+		B77FE9601F1F2CE5000A8D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77FE9561F1F2CD1000A8D95 /* ParentFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B77FE9011F1F16E3000A8D95;
+			remoteInfo = ParentFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +69,7 @@
 		B77FE9441F1F29EE000A8D95 /* ChildAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77FE9481F1F29EE000A8D95 /* ChildAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildAppUITests.swift; sourceTree = "<group>"; };
 		B77FE94A1F1F29EE000A8D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B77FE9561F1F2CD1000A8D95 /* ParentFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParentFramework.xcodeproj; path = Frameworks/Internal/ParentFramework/ParentFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77FE95F1F1F2CDE000A8D95 /* ParentFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +101,7 @@
 		B77FE91C1F1F29EE000A8D95 = {
 			isa = PBXGroup;
 			children = (
+				B77FE9561F1F2CD1000A8D95 /* ParentFramework.xcodeproj */,
 				B77FE9271F1F29EE000A8D95 /* ChildApp */,
 				B77FE93C1F1F29EE000A8D95 /* ChildAppTests */,
 				B77FE9471F1F29EE000A8D95 /* ChildAppUITests */,
@@ -125,6 +150,15 @@
 			path = ChildAppUITests;
 			sourceTree = "<group>";
 		};
+		B77FE9571F1F2CD1000A8D95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B77FE95C1F1F2CD1000A8D95 /* ParentFramework.framework */,
+				B77FE95E1F1F2CD1000A8D95 /* ParentFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +173,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B77FE9611F1F2CE5000A8D95 /* PBXTargetDependency */,
 			);
 			name = ChildApp;
 			productName = ChildApp;
@@ -221,6 +256,12 @@
 			mainGroup = B77FE91C1F1F29EE000A8D95;
 			productRefGroup = B77FE9261F1F29EE000A8D95 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B77FE9571F1F2CD1000A8D95 /* Products */;
+					ProjectRef = B77FE9561F1F2CD1000A8D95 /* ParentFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B77FE9241F1F29EE000A8D95 /* ChildApp */,
@@ -229,6 +270,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B77FE95C1F1F2CD1000A8D95 /* ParentFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParentFramework.framework;
+			remoteRef = B77FE95B1F1F2CD1000A8D95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B77FE95E1F1F2CD1000A8D95 /* ParentFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ParentFrameworkTests.xctest;
+			remoteRef = B77FE95D1F1F2CD1000A8D95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B77FE9231F1F29EE000A8D95 /* Resources */ = {
@@ -295,6 +353,11 @@
 			isa = PBXTargetDependency;
 			target = B77FE9241F1F29EE000A8D95 /* ChildApp */;
 			targetProxy = B77FE9451F1F29EE000A8D95 /* PBXContainerItemProxy */;
+		};
+		B77FE9611F1F2CE5000A8D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParentFramework;
+			targetProxy = B77FE9601F1F2CE5000A8D95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
